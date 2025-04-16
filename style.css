@@ -1,0 +1,211 @@
+/* Tiêu đề */
+.tieude {
+    background-color: red;
+    color: aliceblue;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Biểu tượng book */
+#book {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(251, 250, 250, 0.1);
+    margin: 0 auto;
+    padding: 10px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#book:hover {
+    background-color: #f0f0f0;
+}
+
+/* Danh mục sản phẩm */
+.dropdown-menu {
+    position: absolute;
+    top: 150px; /* Khoảng cách từ trên xuống */
+    left: 42%;
+    background-color: black;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+     /* Ẩn mặc định */
+}
+
+.dropdown-menu.show {
+    display: block; /* Hiển thị khi cần */
+}
+
+.dropdown-menu h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    margin: 5px 0;
+    border-bottom: 1px solid #444;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.fa-book:hover
+{
+    color: rgb(228, 227, 227);
+    transition: 22.5s;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+}
+
+.product-list {
+    
+    position: absolute;
+    top: 100%; /* Hiển thị ngay dưới biểu tượng */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index:1000;
+    width: 200px;
+     
+        /* Ẩn mặc định */
+}
+
+.product-list.show {
+    display: block; /* Hiển thị khi cần */
+}
+
+.hidden {
+    display: none;
+
+}
+.Phantrungtam{
+    width: 80%;
+    height: 100%;
+    background-color: #f0f0f0;
+    float: left; 
+    background-color: whitesmoke;
+    padding-bottom: 80%;
+}
+.Phanbenphai{
+    width: 16%;
+    height: 100%;
+    background-color: #f0f0f0;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-top: 80%;
+}
+.hinhnen1{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    margin: 0 auto;
+}
+.hinhnen2{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    margin: 0 auto;
+}
+.cacdanhmucsachmini {
+    
+    display: flex; /* Sử dụng Flexbox */
+    flex-wrap: wrap; /* Cho phép các mục xuống dòng nếu không đủ chỗ */
+    gap: 20px; /* Khoảng cách giữa các mục */
+    justify-content: space-between; /* Căn đều các mục */
+    padding: 20px; /* Khoảng cách bên trong */
+}
+
+.cacdanhmucsachmini ul {
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các mục xuống dòng */
+    gap: 20px; /* Khoảng cách giữa các mục */
+}
+
+.cacdanhmucsachmini ul li {
+    width: 158px; /* Đặt chiều rộng cố định cho mỗi mục */
+    text-align: center; 
+    cursor: pointer;
+    transition: transform 0.5s ease; /* Hiệu ứng chuyển động khi hover */
+}
+.cacdanhmucsachmini ul li:hover {
+    transform: scale(1.05); /* Phóng to khi hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng khi hover */
+}
+
+.cacdanhmucsachmini ul li img {
+    width: 158px;
+    height: 158px; /* Đặt chiều rộng hình ảnh */
+    height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+    border: 1px solid #ccc; /* Viền cho hình ảnh */
+    border-radius: 5px; /* Bo góc nhẹ */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.cacdanhmucsachmini ul li .product-title {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    
+}
+
+.cacdanhmucsachmini ul li .product-price {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #e74c3c; /* Màu đỏ cho giá */
+    font-weight: bold;
+    
+}
+
+.cacdanhmucsachmini ul li .product-discount {
+    font-size: 12px;
+    color: #999; /* Màu xám cho giá gốc */
+    text-decoration: line-through; /* Gạch ngang giá gốc */
+}
