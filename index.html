@@ -1,70 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>web frontend</title>
-</head>
-<body>
-    <fieldset style="border: none;">
-        <header>
-            <h1 class="tieude">
-                Tiêu đề
-                <a href="#" id="book">
-                    <i class="fa-solid fa-book fa-xl" style="color: #020203;"></i>
-                </a>
-            </h1>
-            <div class="dropdown-menu hidden" id="productDropdown">
-                <h2>Danh mục sản phẩm</h2>
-                <script src="script.js"></script>
-                <ul>
-                    <li><a href="#product1">Sách Trong Nước</a></li>
-                    <li><a href="#product2">Foreign Books</a></li>
-                    <li><a href="#product3">VPP - Dụng Cụ Học Sinh</a></li>
-                    <li><a href="#product4">Đồ Chơi</a></li>
-                    <li><a href="#product5">Làm Đẹp - Sức Khỏe</a></li>
-                    <li><a href="#product6">Hành Trang Đến Trường</a></li>
-                    <li><a href="#product7">Sách Bán Chạy</a></li>
-                </ul>
-            </div>
-        </header>
+  </head>
+  <body>
+    <fieldset style="border: none">
+      <header>
+        <h1 class="tieude">
+          Tiêu đề
+          <a href="#" id="book">
+            <i class="fa-solid fa-book fa-xl" style="color: #020203"></i>
+          </a>
+          <a href="./login.html" id="login" target="_self" class="btn-login"
+            >Đăng nhập</a>
+          
+        </h1>
+        <div class="dropdown-menu hidden" id="productDropdown">
+          <h2>Danh mục sản phẩm</h2>
+          <script src="script.js"></script>
+          <ul>
+            <li><a href="#product1">Sách Trong Nước</a></li>
+            <li><a href="#product2">Foreign Books</a></li>
+            <li><a href="#product3">VPP - Dụng Cụ Học Sinh</a></li>
+            <li><a href="#product4">Đồ Chơi</a></li>
+            <li><a href="#product5">Làm Đẹp - Sức Khỏe</a></li>
+            <li><a href="#product6">Hành Trang Đến Trường</a></li>
+            <li><a href="#product7">Sách Bán Chạy</a></li>
+          </ul>
+        </div>
+      </header>
     </fieldset>
 
     <fieldset class="Phantrungtam">
-        <img class="hinhnen1" src="https://cdn1.fahasa.com/media/wysiwyg/Thang-04-2025/Alphabooks_KC_840x320.png" alt="Hình ảnh nền" width="158">
-        <div class="cacdanhmucsachmini">
-            <ul>
-                <li><img src="https://cdn1.fahasa.com/media/catalog/product/8/9/8935244826487.jpg" alt="Sách 1" width="158"></li>
-                <li><img src="https://cdn1.fahasa.com/media/catalog/product/n/x/nxbtre_full_02342025_043441_1.jpg" alt="Sách 2" width="158"></li>
-                <li><img src="https://cdn1.fahasa.com/media/catalog/product/9/7/9786043775662.jpg" alt="Sách HSK1" width="158"></li>
-                <li><img src="https://cdn1.fahasa.com/media/catalog/product/i/m/image_187163_thanh_ly.jpg" alt="Sách thanh lý" width="158"></li>
-                <li><img src="https://cdn1.fahasa.com/media/catalog/product/8/9/8935278607144.jpg" alt="Sách 3" width="158"></li>
-                <li><img src="./img/8935244874389.jpg" alt="Sách 4" width="158"></li>
-                <li><img src="./img/9786044065526.jpg" alt="Sách 5" width="158"></li>
-                <li><img src="./img/dau-an-hoang-gia_tap-20_bia.webp" alt="Dấu ấn hoàng gia tập 20" width="158"></li>
-                <li><img src="./img/nxbtre_full_11242025_112431.jpg" alt="Sách 6" width="158"></li>
-                <li><img src="./img/card-captor-sakura_the-bai-pha-le_tap-15_bia.webp" alt="Card Captor Sakura tập 15" width="158"></li>
-                <li><img src="./img/chiasetutraitim-bia.webp" alt="Chia sẻ từ trái tim" width="158"></li>
-                <li><img src="./img/1.webp" alt="Sách 7" width="158"></li>
-                <li><img src="./img/2.webp" alt="Sách 8" width="158"></li>
-                <li><img src="./img/3.webp" alt="Sách 9" width="158"></li>
-                <li><img src="./img/4.webp" alt="Sách 10" width="158"></li>
-                <li><img src="./img/5.webp" alt="Sách 11" width="158"></li>
-                <li><img src="./img/6.webp" alt="Sách 12" width="158"></li>
-                <li><img src="./img/7.webp" alt="Sách 13" width="158"></li>
-                <li><img src="./img/8.webp" alt="Sách 14" width="158"></li>
-                <li><img src="./img/9.webp" alt="Sách 15" width="158"></li>
-                <li><img src="./img/10.jpg" alt="Sách 16" width="158"></li>
-                <li><img src="./img/11.webp" alt="Sách 17" width="158"></li>
-                <li><img src="./img/12.webp" alt="Sách 18" width="158"></li>
-                <li><img src="./img/13.webp" alt="Sách 19" width="158"></li>
-            </ul>
-        </div>
+      <img
+        class="hinhnen1"
+        src="https://cdn1.fahasa.com/media/wysiwyg/Thang-04-2025/Alphabooks_KC_840x320.png"
+        alt="Hình ảnh nền"
+        width="158"
+      />
+      <div class="cacdanhmucsachmini">
+        <ul>
+          <li>
+            <img
+              src="https://cdn1.fahasa.com/media/catalog/product/8/9/8935244826487.jpg"
+              alt="Sách 1"
+              width="158"
+            />
+            <p class="book-title">Búp Sen Xanh</p>
+            <p class="book-price">Giá: 50.000đ</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn1.fahasa.com/media/catalog/product/n/x/nxbtre_full_02342025_043441_1.jpg"
+              alt="Sách 2"
+              width="158"
+            />
+            <p class="book-title">Hồ Sơ Mật</p>
+            <p class="book-price">Giá: 70.000 đ</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn1.fahasa.com/media/catalog/product/9/7/9786043775662.jpg"
+              alt="Sách HSK1"
+              width="158"
+            />
+            <p class="book-title">Sách HSK1</p>
+            <p class="book-price">Giá: 120.000 đ</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn1.fahasa.com/media/catalog/product/i/m/image_187163_thanh_ly.jpg"
+              alt="Sách thanh lý"
+              width="158"
+            />
+            <p class="book-title">Tuổi Thơ Dữ Dội</p>
+            <p class="book-price">Giá: 30.000 đ</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn1.fahasa.com/media/catalog/product/8/9/8935278607144.jpg"
+              alt="Sách 3"
+              width="158"
+            />
+            <p class="book-title">Giải Mã Hoóc môn dopamine</p>
+            <p class="book-price">Giá: 90.000 đ</p>
+          </li>
+          <li>
+            <img src="./img/8935244874389.jpg" alt="Sách 4" width="158" />
+            <p class="book-title">Lịch Sử Việt Nam bằng Tranh</p>
+            <p class="book-price">Giá: 45.000 đ</p>
+          </li>
+          <li>
+            <img src="./img/9786044065526.jpg" alt="Sách 5" width="158" />
+            <p class="book-title">50 Đề Ôn Tốt Nghiệp 20252025</p>
+            <p class="book-price">Giá: 22.750 đ</p>
+          </li>
+          <li>
+            <img
+              src="./img/dau-an-hoang-gia_tap-20_bia.webp"
+              alt="Dấu ấn hoàng gia tập 20"
+              width="158"
+            />
+            <p class="book-title">Dấu Ấn Hoàng Gia - Tập 20</p>
+            <p class="book-price">Giá: 58.000 đ</p>
+          </li>
+          <li>
+            <img
+              src="./img/nxbtre_full_11242025_112431.jpg"
+              alt="Sách 6"
+              width="158"
+            />
+            <p class="book-title">Attack On Titan - Tập 26</p>
+            <p class="book-price">Giá: 22.750 đ</p>
+          </li>
+          <li>
+            <img
+              src="./img/card-captor-sakura_the-bai-pha-le_tap-15_bia.webp"
+              alt="Card Captor Sakura tập 15"
+              width="158"
+            />
+            <p class="book-title">Thủ Lĩnh Thẻ BàiBài Sakura - Tập 15</p>
+            <p class="book-price">Giá: 50.000 đ</p>
+          </li>
+          <li>
+            <img
+              src="./img/chiasetutraitim-bia.webp"
+              alt="Chia sẻ từ trái tim"
+              width="158"
+            />
+            <p class="book-title">Chia Sẻ Từ Trái Tim</p> 
+            <p class="book-price">Giá: 45.000 đ</p>
+          </li>
+          <li><img src="./img/1.webp" alt="Sách 7" width="158" />
+            <p class="book-title">Gia Đình Điệp Viên</p>
+            <p class="book-price">Giá: 45.000 đ</p>
+          </li>
+          <li><img src="./img/2.webp" alt="Sách 8" width="158" />
+            <p class="book-title"> Vị Thần Lang Thang - Tập 26</p>
+            <p class="book-price">Giá: 42.750 đ</p>
+          </li>
+          <li><img src="./img/3.webp" alt="Sách 9" width="158" />
+            <p class="book-title">Đươc Học - Tara Westoyer</p>
+            <p class="book-price">Giá: 22.000 đ</p>
+          </li>
+          <li><img src="./img/4.webp" alt="Sách 10" width="158" />
+            <p class="book-title">Khi Mọi Điều Không Như Ý</p>
+            <p class="book-price">Giá: 85.000 đ</p>
+          </li>
+          <li>
+            <img src="./img/5.webp" alt="Bảng Xếp Hạng Quân Vương - Tập 3" width="158" />
+            <p class="book-title">Bảng Xếp Hạng Quân Vương - Tập 3</p>
+            <p class="book-price">Giá: 22.750 đ</p>
+          </li>
+          <li>
+            <img src="./img/6.webp" alt="Giáo Trình Chuẩn HSK 2" width="158" />
+            <p class="book-title">Giáo Trình Chuẩn HSK 2</p>
+            <p class="book-price">Giá: 158.400 đ</p>
+          </li>
+          <li>
+            <img src="./img/7.webp" alt="Nhiệm Vụ Tối Thượng Nhà Yozakura - Tập 16" width="158" />
+            <p class="book-title">Nhiệm Vụ Tối Thượng Nhà Yozakura - Tập 16</p>
+            <p class="book-price">Giá: 28.500 đ</p>
+          </li>
+          
+          <li><img src="./img/8.webp" alt="Sách 14" width="158" />
+            <p class="book-title">Dấu Ấn Hoàng Gia - Tập 18</p>
+            <p class="book-price">Giá: 45.000 đ</p></li>
+          <li><img src="./img/9.webp" alt="Sách 15" width="158" />
+            <p class="book-title">Hồ Điệp Kính Tử</p>
+            <p class="book-price">Giá: 62.000 đ</p></li>
+          <li><img src="./img/10.jpg" alt="Sách 16" width="158" />
+            <p class="book-title">Attack On Titan - Tập 25</p>
+            <p class="book-price">Giá: 45.000 đ</p></li>
+          <li><img src="./img/11.webp" alt="Sách 17" width="158" />
+            <p class="book-title">Seraph Of The End - Tập 31</p>
+            <p class="book-price">Giá: 35.000 đ</p></li>
+          <li><img src="./img/12.webp" alt="Sách 18" width="158" />
+            <p class="book-title">Thám Tử Lừng Danh Conan - Tập 21</p>
+            <p class="book-price">Giá: 25.000 đ</p></li>
+          <li><img src="./img/13.webp" alt="Sách 19" width="158" />
+            <p class="book-title">50 Đề Tốt Nghiệp THPT 2025 - Môn Hóa Học</p>
+            <p class="book-price">Giá: 120.000 đ</p></li>
+        </ul>
+      </div>
+    
     </fieldset>
     <fieldset class="Phanbenphai">
-
+      
     </fieldset>
-</body>
+    
+      
+    
+    </header>
+  </body>
 </html>
